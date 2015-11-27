@@ -11,7 +11,7 @@ func main() {
 	api.Use(rest.DefaultDevStack...)
 
 	router, err := rest.MakeRouter(
-		rest.Post("/json_sample", json_sample),
+		rest.Post("/json_sample", jsonSample),
 	)
 
 	if err != nil {
